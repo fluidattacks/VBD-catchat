@@ -44,3 +44,4 @@ pyyaml==3.13
 six==1.11.0
 text-unidecode==1.2
 watchdog==0.8.3
+Flask-Admin==1.6.1

@@ -32,6 +32,14 @@ def create_app(config_name=None):
     register_errors(app)
     register_commands(app)
 
+    from flask_admin import Admin
+    from .tuning_views import AccountView
+    from .models import User
+    from .extensions import db
+
+    admin = Admin(app, url='/ops', endpoint='site_panel')
+    admin.add_view(AccountView(User, db.session, endpoint='user_panel'))
+
     return app
 
 
