@@ -9,6 +9,7 @@ watchdog = "*"
 faker = "*"
 
 [packages]
+flask-admin = "==1.6.1"
 Flask-SocketIO = "*"
 Flask = "*"
 python-dotenv = "*"
